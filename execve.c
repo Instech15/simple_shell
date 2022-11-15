@@ -8,13 +8,13 @@
  * @argc: argument c
  * @argv: pointer argument v
  *
- * Return: ...
+ * Return: nothing on success, -1 on failure
  */
 
 int main(int argc, char *argv[])
 {
-	char *newArgv[] = {NULL, "hello", "there", "shell", NULL};
-	char *newEnv[] = {NULL};
+	char *newArgv[] = { NULL, "hey", "there", "welcome", NULL };
+	char *newEnv[] = { NULL };
 
 	if (argc != 2)
 	{
