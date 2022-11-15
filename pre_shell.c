@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 /**
- * main - entry 
+ * main - entry
  *
+ * @argc: parameter c
+ * @argv: pointer parameter v
  *
- * Return - Always 0
+ * Return - returns number of characters
  */
 int main(__attribute__((unused))int argc, __attribute__((unused))char *argv[])
 {
@@ -17,11 +19,9 @@ int main(__attribute__((unused))int argc, __attribute__((unused))char *argv[])
 	getline(&lineptr, &n, stdin);
 	printf("%s", lineptr);
 
-	/* Testing character lenght count
-	printf("The lenght of characters: %ld\n", num_of_charac); */
+	printf("The lenght of characters: %ld\n", num_of_charac);
 
 	free(lineptr);
 	exit(EXIT_SUCCESS);
-	
 	return (num_of_charac);
 }

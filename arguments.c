@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - entry point
+ * main - prints all arguments without using ac
  *
- *Return - Alwyas 0
+ * @argc: argument c
+ * @argv: pointer argument v
+ *
+ * return - always 0
  */
 int main(__attribute__((unused))int argc, char **argv)
 {
