@@ -18,9 +18,6 @@ int main(__attribute__((unused))int argc, __attribute__((unused))char *argv[])
 	printf("$ ");
 	getline(&lineptr, &n, stdin);
 	printf("%s", lineptr);
-
-	printf("The lenght of characters: %ld\n", num_of_charac);
-
 	free(lineptr);
 	exit(EXIT_SUCCESS);
 	return (num_of_charac);
