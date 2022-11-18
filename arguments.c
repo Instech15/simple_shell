@@ -8,7 +8,7 @@
  *
  * return - always 0
  */
-int main(__attribute__((unused))int argc, char **argv)
+int argument(__attribute__((unused))int argc, char **argv)
 {
 	int idx = 0;
 

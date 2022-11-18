@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "shell.h"
 
 /**
  * main - Entry point
@@ -8,7 +7,7 @@
  * return: 0
  */
 
-int main (void)
+int get_pid(void)
 {
 	pid_t mypid;
 	mypid = getpid();

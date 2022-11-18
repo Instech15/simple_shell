@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include "shell.h"
 
 /**
  * main - entry point
@@ -11,7 +9,7 @@
  * Return: nothing on success, -1 on failure
  */
 
-int main(int argc, char *argv[])
+int execute(int argc, char *argv[])
 {
 	char *newArgv[] = { NULL, "hey", "there", "welcome", NULL };
 	char *newEnv[] = { NULL };

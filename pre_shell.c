@@ -1,24 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "shell.h"
 
 /**
  * main - entry
  *
- * @argc: parameter c
- * @argv: pointer parameter v
- *
  * Return - returns number of characters
  */
-int main(__attribute__((unused))int argc, __attribute__((unused))char *argv[])
+char *read_line(void)
 {
-	char *lineptr = NULL;
+	char *line = NULL;
 	size_t n = 0;
-	ssize_t num_of_charac;
 
 	printf("$ ");
-	getline(&lineptr, &n, stdin);
-	printf("%s", lineptr);
-	free(lineptr);
+	getline(&line, &n, stdin);
+	printf("%s", line);
+	free(line);
 	exit(EXIT_SUCCESS);
-	return (num_of_charac);
+	return (line);
 }
