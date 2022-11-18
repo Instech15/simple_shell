@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "shell.h"
+
 /**
- * main - prints all arguments without using ac
+ * argument - prints all arguments without using ac
  *
  * @argc: argument c
  * @argv: pointer argument v
